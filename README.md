@@ -2,6 +2,9 @@
 
 Minimal state machine implementation in JS.
 
+Heavily inspired by [soveran/micromachine](https://github.com/soveran/micromachine).
+
+
 ### Installation
 
 * Node
