@@ -1,0 +1,29 @@
+{
+  "name": "micro-machine",
+  "version": "0.1.0",
+  "description": "Minimal state machine implementation in JavaScript.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shime/micro-machine-js.git"
+  },
+  "keywords": [
+    "state machine"
+  ],
+  "author": "Hrvoje Simic <shime.ferovac@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shime/micro-machine-js/issues"
+  },
+  "homepage": "https://github.com/shime/micro-machine-js",
+  "devDependencies": {
+    "jasmine-node": "*",
+    "grunt": "*",
+    "grunt-contrib-jasmine": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-jasmine-node": "*",
+    "grunt-contrib-concat": "*"
+  }
+}
