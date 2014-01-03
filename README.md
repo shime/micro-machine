@@ -16,8 +16,10 @@ npm install micro-machine
 * Browser
 
 ```html
-<script src="//raw.github.com/shime/micro-machine-js/master/dist/micro-machine.min.js"></script>
+<script src="//rawgithub.com/shime/micro-machine-js/master/dist/micro-machine.min.js"></script>
 ```
+
+Download the build from `dist` folder for usage in production. Otherwise, you'll get bitten by Rawgithub!
 
 ### Usage
 
