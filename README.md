@@ -34,6 +34,30 @@ machine.trigger('reset');
 console.log(machine.state); // 'pending'
 ```
 
+### Callbacks
+
+You can also define callbacks that will be invoked after the specified transition.
+
+```javascript
+machine = new MicroMachine('pending');
+machine.transitionsFor.confirm = { pending: 'confirmed' };
+machine.transitionsFor.reset = { confirmed: 'pending' };
+
+var state;
+
+/* Use 'any' to define callback for any transition. */
+machine.on('any',  function(machine){
+  state = machine.state;
+});
+
+machine.on('reset', function() { console.log('resetting...') });
+
+machine.trigger('confirm');
+console.log(state);  // 'confirmed'
+
+machine.trigger('reset'); // 'resetting...'
+```
+
 ### Development
 
 Run tests with
