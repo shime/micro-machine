@@ -80,7 +80,7 @@ describe("callbacks", function(){
 
     it("invokes callback for 'any' if it's been defined", function(){
       var state;
-      machine.on("any", function(machine) { 
+      machine.on('any', function(machine){
         state = machine.state;
       });
 
@@ -90,5 +90,34 @@ describe("callbacks", function(){
       machine.trigger('reset');
       expect(state).toBe('pending');
     });
+  });
+});
+
+describe("composition capabilites", function(){
+
+  function User(){
+    var machine = new MicroMachine("pending");
+
+    machine.transitionsFor.confirm = {pending: 'confirmed'};
+    machine.transitionsFor.reset = {confirmed: 'pending'};
+
+    self = this;
+    machine.on("any", function(machine){
+      self.state = machine.state;
+    });
+
+    this.confirm = function(){
+      machine.trigger('confirm');
+    };
+
+    this.state = undefined;
+
+    return this;
+  }
+
+  it("enables easy composition", function(){
+    var user = new User();
+    user.confirm();
+    expect(user.state).toBe("confirmed");
   });
 });
