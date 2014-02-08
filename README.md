@@ -68,6 +68,8 @@ or build it with
 
     grunt
 
-### License
+### Unlicense
 
-MIT
+This repository and its contents belong to the public domain.
+
+It has been released under the [UNLICENSE](https://github.com/shime/micro-machine-js/blob/master/UNLICENSE).
