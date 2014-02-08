@@ -1,6 +1,6 @@
 {
   "name": "micro-machine",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Minimal state machine implementation in JavaScript.",
   "main": "index.js",
   "repository": {
@@ -11,7 +11,12 @@
     "state machine"
   ],
   "author": "Hrvoje Simic <shime.ferovac@gmail.com>",
-  "license": "MIT",
+"licenses": [
+    {
+      "type": "UNLICENSE",
+      "url": "https://github.com/shime/micro-machine-js/blob/master/UNLICENSE"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/shime/micro-machine-js/issues"
   },
