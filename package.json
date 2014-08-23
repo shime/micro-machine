@@ -4,7 +4,7 @@
   "description": "Minimal state machine implementation in JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "node_modules/.bin/grunt test"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
     "state machine"
   ],
   "author": "Hrvoje Simic <shime.ferovac@gmail.com>",
-"licenses": [
+  "licenses": [
     {
       "type": "UNLICENSE",
       "url": "https://github.com/shime/micro-machine-js/blob/master/UNLICENSE"
@@ -25,13 +25,12 @@
   },
   "homepage": "https://github.com/shime/micro-machine-js",
   "devDependencies": {
-    "jasmine-node": "*",
     "grunt": "*",
-    "grunt-contrib-jasmine": "*",
+    "grunt-cli": "*",
+    "grunt-jasmine-node": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-watch": "*",
-    "grunt-jasmine-node": "*",
     "grunt-contrib-concat": "*"
   }
 }
