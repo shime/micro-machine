@@ -11,11 +11,11 @@
 
     var callbacks = {};
 
-    var changeState = function(state){
-      publicMethods.state = state;
+    var changeState = function(event){
+      publicMethods.state = endingState(event);
 
-      if (callbacks[state]){
-        callbacks[state](publicMethods);
+      if (callbacks[event]){
+        callbacks[event](publicMethods);
       }
 
       if (callbacks.any){
@@ -29,7 +29,7 @@
 
     publicMethods.trigger = function(event){
       if (this.canTrigger(event)){
-        changeState(endingState(event));
+        changeState(event);
         return true;
       } else 
         return false;
