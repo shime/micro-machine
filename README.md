@@ -1,5 +1,9 @@
 ## MicroMachineJS
 
+[![Build Status](https://travis-ci.org/shime/micro-machine-js.svg?branch=master)](https://travis-ci.org/shime/micro-machine-js)
+
+[![NPM](https://nodei.co/npm/micro-machine.png?downloads=true)](https://nodei.co/npm/micro-machine/)
+
 Minimal state machine implementation in JS.
 
 Heavily inspired by [soveran/micromachine](https://github.com/soveran/micromachine).
