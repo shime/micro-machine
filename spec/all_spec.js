@@ -62,7 +62,7 @@ describe("callbacks", function(){
 
     it("accepts a callback invoked when entering a state", function(){
       var state;
-      machine.on("confirmed", function() { state = "confirmed"; });
+      machine.on("confirm", function() { state = "confirmed"; });
 
       machine.trigger('confirm');
 
@@ -71,7 +71,7 @@ describe("callbacks", function(){
 
     it("doesn't invoke callback until its state is reached", function(){
       var state;
-      machine.on("confirmed", function() { throw new Error(); });
+      machine.on("confirm", function() { throw new Error(); });
       
       machine.trigger('ignore');
 
@@ -89,6 +89,21 @@ describe("callbacks", function(){
 
       machine.trigger('reset');
       expect(state).toBe('pending');
+    });
+
+    it("invokes multiple callbacks", function(){
+      var counter = 0;
+
+      machine.on('any', function(machine){
+        counter++;
+      });
+
+      machine.on('ignore', function(machine){
+        counter++;
+      });
+
+      machine.trigger('ignore');
+      expect(counter).toBe(2);
     });
   });
 });
