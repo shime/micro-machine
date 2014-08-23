@@ -3,6 +3,9 @@
   "version": "0.3.0",
   "description": "Minimal state machine implementation in JavaScript.",
   "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/shime/micro-machine-js.git"
