@@ -1,29 +1,31 @@
 {
   "name": "micro-machine",
   "version": "0.4.0",
-  "description": "Minimal state machine implementation in JavaScript.",
+  "description": "Minimal state machine implementation.",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shime/micro-machine-js.git"
+    "url": "git://github.com/shime/micro-machine.git"
   },
   "keywords": [
-    "state machine"
+    "state",
+    "machine",
+    "micro"
   ],
   "author": "Hrvoje Simic <shime.ferovac@gmail.com>",
   "licenses": [
     {
       "type": "UNLICENSE",
-      "url": "https://github.com/shime/micro-machine-js/blob/master/UNLICENSE"
+      "url": "https://github.com/shime/micro-machine/blob/master/UNLICENSE"
     }
   ],
   "bugs": {
-    "url": "https://github.com/shime/micro-machine-js/issues"
+    "url": "https://github.com/shime/micro-machine/issues"
   },
-  "homepage": "https://github.com/shime/micro-machine-js",
+  "homepage": "https://github.com/shime/micro-machine",
   "devDependencies": {
     "grunt": "*",
     "grunt-cli": "*",

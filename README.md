@@ -1,13 +1,10 @@
-## MicroMachineJS
+## Micro Machine
 
-[![Build Status](https://travis-ci.org/shime/micro-machine-js.svg?branch=master)](https://travis-ci.org/shime/micro-machine-js)
+[![Build Status](https://travis-ci.org/shime/micro-machine.svg?branch=master)](https://travis-ci.org/shime/micro-machine)
 
-[![NPM](https://nodei.co/npm/micro-machine.png?downloads=true)](https://nodei.co/npm/micro-machine/)
-
-Minimal state machine implementation in JS.
+Minimal state machine implementation.
 
 Heavily inspired by [soveran/micromachine](https://github.com/soveran/micromachine).
-
 
 ### Installation
 
@@ -16,14 +13,6 @@ Heavily inspired by [soveran/micromachine](https://github.com/soveran/micromachi
 ```shell
 npm install micro-machine
 ```
-
-* Browser
-
-```html
-<script src="//rawgithub.com/shime/micro-machine-js/master/dist/micro-machine.min.js"></script>
-```
-
-Download the build from `dist` folder for usage in production. Otherwise, you'll get bitten by Rawgithub!
 
 ### Usage
 
@@ -76,4 +65,4 @@ or build it with
 
 This repository and its contents belong to the public domain.
 
-It has been released under the [UNLICENSE](https://github.com/shime/micro-machine-js/blob/master/UNLICENSE).
+It has been released under the [UNLICENSE](https://github.com/shime/micro-machine/blob/master/UNLICENSE).
