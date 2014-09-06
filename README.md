@@ -8,8 +8,6 @@ Heavily inspired by [soveran/micromachine](https://github.com/soveran/micromachi
 
 ### Installation
 
-* Node
-
 ```shell
 npm install micro-machine
 ```
@@ -55,11 +53,11 @@ machine.trigger('reset'); // 'resetting...'
 
 Run tests with
 
-    grunt test
+    npm test
 
 or build it with
 
-    grunt
+    npm run build
 
 ### Unlicense
 

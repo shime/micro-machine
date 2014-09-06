@@ -4,7 +4,8 @@
   "description": "Minimal state machine implementation.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/grunt test"
+    "test": "node_modules/.bin/grunt test",
+    "build": "node_modules/.bin/grunt"
   },
   "repository": {
     "type": "git",
