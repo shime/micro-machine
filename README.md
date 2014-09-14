@@ -15,14 +15,16 @@ npm install micro-machine
 ### Usage
 
 ```javascript
-machine = new MicroMachine('pending');
-machine.transitionsFor.confirm = { pending: 'confirmed' };
-machine.transitionsFor.reset = { confirmed: 'pending' };
+var Machine = require('micro-machine')
+  , machine = new Machine('pending')
 
-machine.trigger('confirm');
-console.log(machine.state); // 'confirmed'
-machine.trigger('reset');
-console.log(machine.state); // 'pending'
+machine.transitionsFor.confirm = { pending: 'confirmed' }
+machine.transitionsFor.reset = { confirmed: 'pending' }
+
+machine.trigger('confirm')
+console.log(machine.state) // 'confirmed'
+machine.trigger('reset')
+console.log(machine.state) // 'pending'
 ```
 
 ### Callbacks
@@ -30,23 +32,25 @@ console.log(machine.state); // 'pending'
 You can also define callbacks that will be invoked after the specified transition.
 
 ```javascript
-machine = new MicroMachine('pending');
-machine.transitionsFor.confirm = { pending: 'confirmed' };
-machine.transitionsFor.reset = { confirmed: 'pending' };
+var Machine = require('micro-machine')
+  , machine = new Machine('pending')
+  
+machine.transitionsFor.confirm = { pending: 'confirmed' }
+machine.transitionsFor.reset = { confirmed: 'pending' }
 
-var state;
+var state
 
 /* Use 'any' to define callback for any transition. */
 machine.on('any',  function(machine){
-  state = machine.state;
-});
+  state = machine.state
+})
 
-machine.on('reset', function() { console.log('resetting...') });
+machine.on('reset', function() { console.log('resetting...') })
 
-machine.trigger('confirm');
-console.log(state);  // 'confirmed'
+machine.trigger('confirm')
+console.log(state)  // 'confirmed'
 
-machine.trigger('reset'); // 'resetting...'
+machine.trigger('reset') // 'resetting...'
 ```
 
 ### Development
