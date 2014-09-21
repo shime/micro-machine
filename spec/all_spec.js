@@ -1,4 +1,4 @@
-var MicroMachine = require('../lib/micro-state-machine')
+var MicroMachine = require('../')
 
 var machine
 
