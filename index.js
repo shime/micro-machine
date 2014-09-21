@@ -1,1 +1,1 @@
-module.exports = require('./lib/micro-state-machine');
+module.exports = require('./lib/micro-state-machine')
