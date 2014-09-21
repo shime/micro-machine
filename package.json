@@ -32,7 +32,6 @@
     "grunt-cli": "*",
     "grunt-jasmine-node": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-contrib-jshint": "*",
     "grunt-contrib-watch": "*",
     "grunt-contrib-concat": "*"
   }
