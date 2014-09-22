@@ -6,13 +6,13 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['lib/*.js'],
+        src: ['index.js'],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
       },
       dist: {
         files: {
